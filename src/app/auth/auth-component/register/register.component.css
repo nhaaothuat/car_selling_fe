@@ -1,0 +1,70 @@
+/* Nền toàn trang */
+.bg {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Khối bao toàn bộ form */
+.parent {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 32px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Nội dung form */
+.child {
+  width: 100%;
+}
+
+/* Hàng chứa tiêu đề */
+.igDiv {
+  margin-bottom: 24px;
+}
+
+/* Tiêu đề chính */
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin: 0 0 16px;
+}
+
+/* Nút đăng ký */
+.login-form-button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* Khoảng cách giữa nút và dòng chữ "Or" */
+.login-form-margin {
+  margin-bottom: 8px;
+}
+
+/* Link đăng ký */
+a {
+  color: #1890ff;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 576px) {
+  .parent {
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}

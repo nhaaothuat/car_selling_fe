@@ -1,0 +1,51 @@
+/* Header tổng */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 64px;
+  background-color: #003973;
+  color: white;
+}
+
+/* Tiêu đề bên trái */
+.main-header a:first-child {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Nav links bên phải */
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Button links */
+.nav-links a[nz-button] {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Active route */
+.nav-links a.active {
+  color: #1890ff !important; /* hoặc đổi màu khác nếu muốn nổi bật */
+  border-bottom: 2px solid #1890ff;
+}
+
+/* Responsive (tuỳ chọn) */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+  }
+
+  .nav-links {
+    margin-top: 12px;
+  }
+}
